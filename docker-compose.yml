@@ -11,6 +11,7 @@ services:
       dockerfile: Dockerfile
       context: .docker/tika
     networks:
+      - frontend
       - app
     healthcheck:
       test: [ "CMD", "wget", "-O", "/dev/null", "-q", "http://127.0.0.1:9998/" ]
