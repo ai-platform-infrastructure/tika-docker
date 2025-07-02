@@ -1,6 +1,6 @@
 ARG UID_GID="35002:35002"
 
-FROM apache/tika:3.1.0.0-full
+FROM apache/tika:3.2.0.0-full
 
 USER root
 
